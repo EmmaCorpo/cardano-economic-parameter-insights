@@ -278,18 +278,18 @@ This shows that on average, across the period the 0-7M class held 6.3% of the st
 
 However rough, this statistic support the assumption that the current level of own stake and its distribution across pools leads to rewards that, on average, near those of a pool with no own stake. Indeed, even for large saturated pools, financial optimization may lead to a low amount of pledge, since for them a higher pledge increases the total rewards for large pools, but the yield on own capital may be reduced when increasing the pledge. Thus even large pools may find it sub-optimal to replace delegated capital with own capital in order to get the last 23% of the full reward potential. A precise utility and cost assessment, and the interplay with parameters setting minimum costs and margins for individual pools, are left to future research.
 
-**Declared vs Actual Pledge**
+**Declared vs Committed Pledge**
 
 In this section we have used as pledge the amount declared by stake pool operators, not the own money actually provided. In principle, the two amounts should nearly coincide, since pools not matching the pledge receive no rewards. Yet this is not always the case. The main discrepancies regard small recent pools that have not yet matched the declared pledge, and pools that, while no more active and containing no active stake, have not yet been retired. Some of these used to be large and have large declared pledge, even if they have no more activer stake now. Both cases only affect the pool statistics for the first bucket, i.e. SPOPs with stake in the 0-7M range. This can be seen in in Figure <a href="#fig_average by class_comm" data-reference-type="ref" data-reference="fig_average by class_comm">5</a>: actual pledge is much smaller in the first bucket than declared pledge we saw above. The discrepancy becomes smaller and smaller, the larger are the pools in the buckets. Indeed, the larger the pools, the more effective it is to have high actual pledge. Because of this pattern, if now estimate the aggregate rewards based on actual rather than declared pledge, the effect is negligible, as we see in Figure <a href="#fig_estimate_by_class_comm" data-reference-type="ref" data-reference="fig_estimate_by_class_comm">5</a>. This is a confirmation of the very limited effect of pledge on the rewards of small pools: in spite of a large discrepancy between actual and declared pledge for small pool, the effect of this on aggregate rewards is negligible.
 
 <figure id="fig_average by class_comm">
 <img src="./figures/average by class_comm.png" width="400" />
-<figcaption><strong>Average and Median Stake and Pledge.</strong> The figure covers the period from epoch 311-470.</figcaption>
+<figcaption><strong>Average and Median Stake and Pledge.</strong> Actually committed pledge. The figure covers the period from epoch 311-470.</figcaption>
 </figure>
 
 <figure id="fig_estimate_by_class_comm">
 <img src="./figures/estimate by class_comm.png" width="400" />
-<figcaption><strong>Average and Median Stake and Pledge.</strong> The figure covers the period from epoch 311-470.</figcaption>
+<figcaption><strong>Average and Median Stake and Pledge.</strong> Actually committed pledge. The figure covers the period from epoch 311-470.</figcaption>
 </figure>
 
 # Actual Reserves and Treasury Distribution
